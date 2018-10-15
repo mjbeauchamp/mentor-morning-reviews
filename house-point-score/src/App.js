@@ -43,10 +43,25 @@ class App extends Component {
       <div className="App">
         <h1>House Scores</h1>
         <div className="houses">
-          <House addPoints={this.pointGryffindor} house="Gryffindor" points={this.state.gryffindor}/>
-          <House addPoints={this.pointHufflepuff} house="Hufflepuff" points={this.state.hufflepuff}/>
-          <House addPoints={this.pointRavenclaw} house="Ravenclaw" points={this.state.ravenclaw}/>
-          <House addPoints={this.pointSlytherin} house="Slytherin" points={this.state.slytherin}/>
+          <div className="house">
+            <House addPoints={this.pointGryffindor} house="Gryffindor" />
+            <h2>Points: {this.state.gryffindor}</h2>
+          </div>
+
+          <div className="house">
+            <House addPoints={this.pointHufflepuff} house="Hufflepuff" />
+            <h2>Points: {this.state.hufflepuff}</h2>
+          </div>
+
+          <div className="house">
+            <House addPoints={this.pointRavenclaw} house="Ravenclaw" />
+            <h2>Points: {this.state.ravenclaw}</h2>
+          </div>
+
+          <div className="house">
+            <House addPoints={this.pointSlytherin} house="Slytherin" />
+            <h2>Points: {this.state.slytherin}</h2>
+          </div>
         </div>
       </div>
     );
